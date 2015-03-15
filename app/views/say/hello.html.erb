@@ -1,0 +1,9 @@
+<h1>Say#hello</h1>
+<p>Hello world</p>
+<p>Current time is <%= @time %>. </p>
+<%= link_to "Goodbye", say_goodbye_path %>
+<ul>
+<% for file in @files %>
+  <li><%= file %></li>
+<% end %>
+</ul>
