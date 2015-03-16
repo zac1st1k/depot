@@ -38,3 +38,6 @@ bower.json
 
 # Ignore pow environment settings
 .powenv
+
+#Ignore Cloud9 files
+.c9
