@@ -40,4 +40,4 @@ bower.json
 .powenv
 
 #Ignore Cloud9 files
-.c9
+.c9/
