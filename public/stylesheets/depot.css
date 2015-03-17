@@ -154,3 +154,7 @@
 #side #timer {
     color: #fff;
 }
+
+#store .entry form, #store .entry form div {
+  display: inline;
+}
