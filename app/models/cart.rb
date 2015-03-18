@@ -11,4 +11,3 @@ class Cart < ActiveRecord::Base
     current_item
   end
 end
-
