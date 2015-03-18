@@ -20,6 +20,7 @@
       <a href="http://www..">Contact</a><br />
       <br />
       <p><span id="timer">Current time is <%= Time.now %></span></p>
+      <p><span id="Counter">Total <%=pluralize(session[:counter], 'visitor') %>.</span></p>
     </div>
     <div id="main">
       <%= yield %>
