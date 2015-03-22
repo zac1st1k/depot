@@ -19,13 +19,23 @@
           <%= render @cart %>
         <% end %>
       <% end %>
-      <a href="http://www..">Home</a><br />
-      <a href="http://www..">Questions</a><br />
-      <a href="http://www..">News</a><br />
-      <a href="http://www..">Contact</a><br />
-      <br />
+      <a href="">Home</a><br />
+      <a href="">Questions</a><br />
+      <a href="">News</a><br />
+      <a href="">Contact</a><br />
+      
+      <% if session[:user_id] %>
+        <br />
+        <%= link_to 'Orders', orders_path %><br />
+        <%= link_to 'Products', products_path%><br />
+        <%= link_to 'Users', users_path %><br />
+        <br />
+        <%= button_to 'Logout', logout_path, :method => :delete %><br />
+      <% end %>
       <p><span id="timer">Current time is <%= Time.now %></span></p>
       <p><span id="Counter">Total <%=pluralize(session[:counter], 'visitor') %>.</span></p>
+      
+        
     </div>
     <div id="main">
       <%= yield %>
