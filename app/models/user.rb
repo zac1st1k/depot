@@ -3,7 +3,7 @@ class User < ActiveRecord::Base
   validates :password, :confirmation => true
   attr_accessor :password_confirmation
   attr_reader :password
-  validates :password_must_be_present
+  validate :password_must_be_present
   
   def User.authenticate(name,password)
     if user = find_by_name(name)
