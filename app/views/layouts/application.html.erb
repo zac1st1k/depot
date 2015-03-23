@@ -10,7 +10,7 @@
 <body id="store">
   <div id="banner">
     <%= link_to image_tag("logo.png"), store_path %>
-    <%= @page_title || "Pragmatic Bookshelf" %>
+    <%= @page_title || t('.title') %>
   </div>
   <div id="columns">
     <div id="side">
@@ -19,10 +19,11 @@
           <%= render @cart %>
         <% end %>
       <% end %>
-      <a href="">Home</a><br />
-      <a href="">Questions</a><br />
-      <a href="">News</a><br />
-      <a href="">Contact</a><br />
+      <a href=""></a><br />
+      <a href=""><%= t('.home') %></a><br />
+      <a href=""><%= t('.question') %></a><br />
+      <a href=""><%= t('.news') %></a><br />
+      <a href=""><%= t('.contact') %></a><br />
       
       <% if session[:user_id] %>
         <br />
