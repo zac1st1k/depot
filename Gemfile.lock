@@ -82,7 +82,7 @@ PLATFORMS
 DEPENDENCIES
   activemerchant (~> 1.10.0)
   haml (~> 3.0.18)
-  jquery-rails (= 0.2.2)
+  jquery-rails (~> 0.2.2)
   rails (= 3.0.5)
   rake (= 0.8.7)
   sqlite3
