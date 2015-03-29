@@ -27,7 +27,7 @@ gem 'rake', '0.8.7'
 gem 'will_paginate', '>= 3.0.pre'
 gem 'activemerchant', '~> 1.10.0'
 gem 'haml', '~> 3.0.18'
-gem 'jquery-rails', '~> 0.2.2'
+gem 'jquery-rails', '= 0.2.2'
 
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
